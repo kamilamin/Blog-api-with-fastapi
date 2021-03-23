@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+fastapi-blog-app
 
 # C extensions
 *.so
