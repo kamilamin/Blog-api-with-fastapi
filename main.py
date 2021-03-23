@@ -2,10 +2,17 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get('/')
-def index():
-    return {"data": {"name": "kamil"}}
+# @app is path operation decortor / Base path and get function
+@app.get('/') 
+def index(): #Path operation function
+    return {'data': 'Blog list'}
 
-@app.get('/about')
-def about():
-    return {"data": {"about": "This is about section"}}
+# About path and get function 
+@app.get('/blogs/{id}') #Path operation function
+def fetchBlogsById(id):
+    return {"data": id}
+
+@app.get('/blogs/comments/{id}')
+def getBlogComments(id):
+    return {"data": {"1","2"}}
+
