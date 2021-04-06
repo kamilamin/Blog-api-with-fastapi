@@ -1,0 +1,18 @@
+In the project directory we have to developed virtual environment. After that we able to start
+the project.
+
+Follow the step for start the project:
+
+1: Develop virtual environment:
+python3 -m venv <environment name>
+
+2: Activate environment:
+source your_env/bin/activate
+
+3: Install Dependencies (All dependencies mentioned in requirement file): 
+pip3 install -r requirement.txt
+
+4: Run project:
+uvicorn blog.main:app --reload
+
+reload flag is not mandatory but whenever you make some changes you need to restart the server.
