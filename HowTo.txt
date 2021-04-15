@@ -10,7 +10,7 @@ python3 -m venv <environment name>
 source your_env/bin/activate
 
 3: Install Dependencies (All dependencies mentioned in requirement file): 
-pip3 install -r requirement.txt
+pip3 install -r requirements.txt
 
 4: Run project:
 uvicorn blog.main:app --reload
